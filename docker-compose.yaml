@@ -1,0 +1,18 @@
+---
+services:
+  nginx:
+    build:
+      target: nginx
+    image: k8s-php-fpm/nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./app:/var/www/html
+    depends_on:
+      - php-fpm
+  php-fpm:
+    build:
+      target: php-fpm
+    image: k8s-php-fpm/php:latest
+    volumes:
+      - ./app:/var/www/html

@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-fpm
+  labels:
+    app: php-fpm
+spec:
+  selector:
+    matchLabels:
+      app: php-fpm
+  template:
+    metadata:
+      labels:
+        app: php-fpm
+    spec:
+      containers:
+        - name: php-fpm
+          image: k8s-php-fpm/php:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9000
