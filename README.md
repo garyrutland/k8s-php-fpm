@@ -4,6 +4,8 @@ A sample repo for me to see how K8s works.
 
 ## Prerequisite
 
+> This assumes you are using either Mac or Windows, there are other options but these two steps are the simplest
+
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Enable [Kubernetes](https://docs.docker.com/desktop/features/kubernetes/)
 
