@@ -2,7 +2,7 @@
 
 A sample repo for me to see how K8s works.
 
-## Prerequisite
+## Prerequisites
 
 > This assumes you are using either Mac or Windows, there are other options but these two steps are the simplest
 
